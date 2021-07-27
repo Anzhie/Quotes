@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Котировки</string>
+
+    <string name="cancel">Отмена</string>
+
+    <string name="error_text">Что-то пошло не так\nПроверьте настройки и\u00A0подключение к\u00A0сети\u00A0интернет и\u00A0попробуйте загрузить данные ещё\u00A0раз</string>
+    <string name="error_button_text">Перезагрузить</string>
+    <string name="error_button_settings">Настройки</string>
+
+    <string name="settings_key">Введите Rapid Key</string>
+</resources>

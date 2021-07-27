@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Quotes</string>
+
+    <string name="ok" translatable="false">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="error_text">Something went wrong\nCheck the\u00A0settings and\u00A0the\u00A0internet connection and\u00A0try\u00A0again</string>
+    <string name="error_button_text">Try again</string>
+    <string name="error_button_settings">Settings</string>
+
+    <string name="settings_key">Setup Rapid Key</string>
+</resources>

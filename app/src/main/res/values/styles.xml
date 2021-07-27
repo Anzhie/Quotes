@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Text" parent="AppTheme">
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextOrdinary" parent="Text">
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="TextError" parent="Text">
+        <item name="android:textColor">@color/textErrorColor</item>
+    </style>
+
+    <style name="TextOrdinaryLarge" parent="TextOrdinary">
+        <item name="android:textSize">@dimen/text20</item>
+    </style>
+
+    <style name="TextOrdinaryMedium" parent="TextOrdinary">
+        <item name="android:textSize">@dimen/text16</item>
+    </style>
+
+    <style name="TextOrdinarySmall" parent="TextOrdinary">
+        <item name="android:textSize">@dimen/text12</item>
+    </style>
+
+    <style name="ButtonError" parent="Text">
+        <item name="colorPrimary">@color/buttonErrorColor</item>
+    </style>
+
+    <style name="TextErrorMedium" parent="TextError">
+        <item name="android:textSize">@dimen/text16</item>
+    </style>
+</resources>

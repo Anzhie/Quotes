@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    android:paddingTop="8dp">
+
+    <ImageView
+        android:id="@+id/imageViewQuoteChange"
+        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_quote_up" />
+
+    <TextView
+        style="@style/TextOrdinaryLarge"
+        android:id="@+id/textViewQuoteSymbol"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_width="0dp"
+        app:layout_constraintEnd_toStartOf="@id/textViewQuoteLastPrice"
+        app:layout_constraintStart_toEndOf="@id/imageViewQuoteChange"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="AMD" />
+
+    <TextView
+        style="@style/TextOrdinaryMedium"
+        android:ellipsize="end"
+        android:id="@+id/textViewQuoteName"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="@id/textViewQuoteSymbol"
+        app:layout_constraintStart_toStartOf="@id/textViewQuoteSymbol"
+        app:layout_constraintTop_toBottomOf="@id/textViewQuoteSymbol"
+        tools:text="Advanced Micro  Devices, Inc." />
+
+    <TextView
+        style="@style/TextOrdinaryLarge"
+        android:id="@+id/textViewQuoteLastPrice"
+        android:includeFontPadding="false"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/smallPadding"
+        android:layout_width="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/textViewQuoteCurrency"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="79.2" />
+
+    <TextView
+        style="@style/TextOrdinarySmall"
+        android:id="@+id/textViewQuoteCurrency"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/textViewQuoteLastPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="USD" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
